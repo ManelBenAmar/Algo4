@@ -1,0 +1,16 @@
+ALGORITHM insertionSort
+VAR
+arr : ARRAY_OF INTEGER[20];
+i,j :INTEGER;
+BEGIN
+ i := 1;
+WHILE i < arr.length DO
+    j := i;
+    WHILE ( (j > 0)  and ()arr[j-1] > arr[j]) DO
+        swap arr[j] and arr[j-1];
+        j := j - 1;
+    END_WHILE
+    i := i + 1;
+END_WHILE
+END
+
